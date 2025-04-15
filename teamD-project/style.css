@@ -1,0 +1,317 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+
+.navbar {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    border-left: 8px solid transparent;
+    position: fixed;
+    z-index: +999;
+    background-color:transparent;
+    backdrop-filter: blur(0.7px);
+}
+
+.nav-logo {
+    height: 80px;
+    width: 90px;
+    background-image: url("images/logo2-Photoroom.png");
+    background-size: cover;
+    margin: 0px 40px 20px 40px;
+
+    
+}
+
+.nav-ul {
+    display: flex;
+    position: relative;
+    left: 350px;
+    list-style: none;
+}
+
+.navbar ul li {
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 20px;
+    font-size: 17px;
+    font: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.navbar ul li a{
+    list-style: none ;
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.781);
+    border-bottom: 5px solid transparent;
+    padding: 0 0 30px;
+
+
+   
+}
+
+.navbar ul li a:hover {
+    color:rgb(132, 132, 132);
+    
+   
+}
+.japan{
+    background-color: rgb(6, 120, 112);
+    border:none;
+    border-radius: 40px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    transition: opacity 1.5sec;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+
+}
+.japan:hover{
+    opacity: 0.7;
+}
+.japan:active{
+    opacity: 0.5;
+}
+
+.container {
+    
+    background-image: url(images/New\ Project.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+   
+    
+    
+    
+}
+
+.aasirvad {
+    background-color:white;
+}
+
+.box h3 {
+    font-size: 4rem;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 115px;
+}
+
+.box p {
+    color:black;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-left: 55px;
+    margin-bottom: 40px;
+
+}
+
+.ankit {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    border: 1px solid grey;
+    color: black;
+    backdrop-filter: blur(3px);
+    transition: opacity 0.5s;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 175px;
+    
+    
+}
+
+.ankit:hover {
+    opacity: 0.6;
+}
+
+.ankit:active {
+    opacity: 0.4;
+}
+
+
+.aasirvad h3{
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.aasirvad{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.aasirvad p{
+    width:660px;
+    height: 84px;
+    line-height: 24px;
+    color: rgb(106, 102, 98);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.bidan_chettri{
+    width:100vw;
+    height:200px;
+    display: flex;
+    background-color: rgb(232, 232, 232);
+    justify-content: center;
+    text-align: center;
+   
+
+}
+
+   
+   
+
+.sites h3{
+    font-family: "Playfair Display",serif;
+     font-size: 40px;
+     
+}
+.sites p{
+     width:360px;
+    height: 84px;
+    line-height: 24px;
+    color: rgb(106, 102, 98);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.temple{
+    width: 100vw;
+    height: 700px;
+    background-color:rgb(232, 232, 232) ;
+    
+    
+}
+.maya_temple{
+
+    margin-left: 50px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+}
+.heading h3{
+    padding-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+
+.subtitle{
+    margin-top: 0;
+    width: 200px; 
+    padding-left:15px ;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(106, 102, 98) ;
+    transition: box-shadow 1s ;
+}
+.maya_temple:hover{
+  
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+
+  
+}
+.location{
+    width: 100vw;
+    height: 40px;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    font-family:"Playfair Display",serif;
+    
+   
+}
+.map{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    display: block;
+    
+
+}
+.visit{
+    background-color:rgb(252, 245, 237);
+    width: 100vw;
+    height: 400px;
+}
+.plan{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.loc h3{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: "Playfair Display",serif;
+    
+
+}
+.loc p{
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(106, 102, 98);
+}
+.contact button{
+    margin-top: 100px;
+    background-color: black;
+    border: solid;
+    color: white;
+    padding: 10px 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: opacity 0.15s;
+}
+.contact button:hover{
+    opacity: 0.6;
+}
+.contact button:active{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
