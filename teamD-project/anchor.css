@@ -13,8 +13,8 @@ body, html {
     position: sticky;
     z-index: +999;
     background-color:transparent;
-    backdrop-filter: blur(0.7px);
-    
+    backdrop-filter: blur(0.7px); 
+    margin-top: 1%;
 }
 
 .nav-logo {
@@ -23,25 +23,20 @@ body, html {
     background-image: url("images/logo2-Photoroom.png");
     background-size: cover;
     margin: 0px 40px 20px 40px;
-
-    
 }
 
 .nav-ul {
     display: flex;
-    position: relative;
-    left: 350px;
+    position: fixed;
+    left: 550px;
     list-style: none;
 }
 
 .navbar ul li {
-    justify-content: space-around;
-    align-content: center;
     margin: 0 20px;
     font-size: 17px;
-    font: bold;
-    font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;;
 }
 
 .navbar ul li a{
@@ -50,16 +45,12 @@ body, html {
     color: hsla(0, 0%, 0%, 0.781);
     border-bottom: 5px solid transparent;
     padding: 0 0 30px;
-
-
-   
 }
 
 .navbar ul li a:hover {
     color:rgb(132, 132, 132);
-    
-   
 }
+
 .japan{
     background-color: rgb(6, 120, 112);
     border:none;
@@ -72,9 +63,6 @@ body, html {
     transition: opacity 1.5sec;
     font-weight: bold;
     cursor: pointer;
-    
-    
-
 }
 .japan:hover{
     opacity: 0.7;
@@ -82,10 +70,51 @@ body, html {
 .japan:active{
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        height: auto;
+        backdrop-filter: blur(5px);
+        position: sticky;
+    }
+
+    .nav-logo {
+        height: 60px;
+        width: 60px; /* Adjust size for mobile */
+        margin: 10px auto;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        padding: 0;
+        left: 0; /* Remove fixed positioning */
+        align-content: center;
+        position: static;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .japan {
+        width: 100%; /* Make button full-width */
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 .first-page {
     height: 100%;
     width: 100%;
     flex-direction: row;
+    text-align: justify;;
 }
 
 .title a{
@@ -93,14 +122,13 @@ body, html {
     margin: 60px 0 30px;
     display: flex; 
     justify-content: center;
-    border: 2px solid transparent;
+    border-bottom: 2px solid #f8CE1C;
     background-color: transparent;
     color: black;
     text-decoration: none;
 }
 
 .title:hover {
-    border-bottom: 2px solid #f8CE1C;
     background-color: transparent;
     transition: border 1.5s ease-in;
 }
@@ -122,7 +150,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 60px;
+    margin: 20px 0 20px 60px;
 }
 
 .second-para {
@@ -131,7 +159,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 60px;
+    margin: 20px 0 20px 60px;
 }
 
 .third-para {
@@ -141,8 +169,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
-
+    margin: 20px 0 20px 65px;
 }
 
 .fourth-para {
@@ -151,7 +178,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .fifth-para {
@@ -160,7 +187,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .sixth-para {    
@@ -168,8 +195,8 @@ body, html {
     width: 80%;
     background-image: url(lumbini_bodhi_tree.jpg);
     background-size: cover;
-    margin: 20px 0 0 65px;
-    border-radius: 10px;
+    margin: 20px 0 10px 65px;
+    border-radius: 20px;
 }
 
 .seventh-para {
@@ -178,7 +205,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .eight-para {
@@ -186,7 +213,7 @@ body, html {
     width: 90%;
     background-image: url(Lumbini_ashoka_pillar.jpg);
     background-size: cover;
-    margin: 20px 0 0 35px;
+    margin: 20px 0 20px 35px;
     border-radius: 10px;
 }
 
@@ -196,7 +223,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .tenth-para {
@@ -204,7 +231,7 @@ body, html {
     width: 80%;
     background-image: url(puskarini-lake-lumbini.jpg);
     background-size: cover;
-    margin: 20px 0 0 35px;
+    margin: 20px 0 20px 35px;
     border-radius: 10px;
 }
 
@@ -214,7 +241,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .twelfth-para {
@@ -222,7 +249,7 @@ body, html {
     width: 70%;
     background-image: url(Sanctum.jpg);
     background-size: cover;
-    margin: 20px 0 0 35px;
+    margin: 20px 0 20px 35px;
     border-radius: 10px;
 }
 
@@ -232,7 +259,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .right-section {
@@ -252,8 +279,8 @@ body, html {
     width: 70%;
     background-image: url(lumbini_pic.jpg);
     background-size: cover;
-    margin: 20px 0 0 35px;
-    border-radius: 10px;
+    margin: 20px 0 10px 35px;
+    border-radius: 20px;
 }
 
 .fifteenth-para {
@@ -262,7 +289,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .sixteenth-para {
@@ -271,7 +298,7 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
 .seventeenth-para {
@@ -279,7 +306,7 @@ body, html {
     width: 90%;
     background-image: url(eternal_flames.jpg);
     background-size: cover;
-    margin: 20px 0 0 35px;
+    margin: 20px 0 20px 35px;
     border-radius: 10px;
 }
 
@@ -289,51 +316,102 @@ body, html {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 29%);
     font-weight: 545;
-    margin: 20px 0 0 65px;
+    margin: 20px 0 20px 65px;
 }
 
-
-
-
-@media screen and (max-width: 1024px) {
-    .nav-ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+@media  screen and (max-width: 1200px) {
+    @media  screen and (max-width: 1200px) {
+        .first-para {
+            height: auto;
+            width: 75%;
+            font-size: 16px;
+            margin: 20px 0 0 60px;
+        }
+        
+        .second-para {
+            height: auto;
+            width: 75%;
+            font-size: 16px;
+            margin: 20px 0 0 60px;
+        } 
+    
+    .third-para {
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
+    } 
+    .fourth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
+    } 
+    .ninth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .first-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .fifth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .left-section, .right-section {
-        width: 90%;
+    .seventh-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .fifteenth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .nav-ul {
-        flex-direction: column;
-        padding: 0;
+    .sixteenth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .nav-ul li {
-        margin: 10px 0;
+    .eighteenth-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .first-page {
-        flex-direction: column;
-        padding: 10px;
+    .eleventh-para{
+        height: auto;
+        width: 75%;
+        font-size: 16px;
+        margin: 20px 0 0 60px;
     }
-    .left-section, .right-section {
-        width: 100%;
+    /*Images @media query*/
+    .sixth-para{
+        height: 240px;
+        width: auto;
     }
-    h1.title {
-        font-size: 22px;
-        text-align: center;
+    .eight-para{
+        height: 240px;
+        width: auto;
     }
-}
+    .tenth-para{
+        height: 240px;
+        width: auto;
+    }
+    .twelfth-para{
+        height: 240px;
+        width: auto;
+    }
+    .fourteenth-para{
+        height: 240px;
+        width: auto;
+    }
+    .seventeenth-para{
+        height: 240px;
+        width: auto;
+    }
+    }
