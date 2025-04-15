@@ -20,7 +20,7 @@ body, html {
     width: 100%;
     display: flex;
     border-left: 8px solid transparent;
-    position: fixed;
+    position: sticky;
     z-index: +999;
     background-color:transparent;
     backdrop-filter: blur(0.7px);
@@ -93,6 +93,45 @@ body, html {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        height: auto;
+        backdrop-filter: blur(5px);
+        position: sticky;
+    }
+
+    .nav-logo {
+        height: 60px;
+        width: 60px; /* Adjust size for mobile */
+        margin: 10px auto;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        padding: 0;
+        left: 0; /* Remove fixed positioning */
+        align-content: center;
+        position: static;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .japan {
+        width: 100%; /* Make button full-width */
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 .container {
     
     background-image: url(images/New\ Project.png);
@@ -114,19 +153,38 @@ body, html {
     color:black;
     font-family:'Times New Roman', Times, serif;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 800;
     text-align: left;
     margin-left: 115px;
 }
 
+@media screen and (max-width: 1000px) {
+    .box h3 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: left;
+        margin-left: 50px;
+    }
+} 
+
 .box p {
     color:black;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
     font-family: Arial, sans-serif;
     text-align: left;
     margin-left: 55px;
     margin-bottom: 40px;
+}
 
+@media screen and (max-width: 1000px){
+    .box p {
+        font-size: 16px;
+        font-weight: 350;
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .ankit {
@@ -139,11 +197,19 @@ body, html {
     backdrop-filter: blur(3px);
     transition: opacity 0.5s;
     border-radius: 4px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     margin-left: 175px;
-    
-    
+}
+
+@media screen and (max-width: 1000px) {
+    .ankit{
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 450;
+        cursor: pointer;
+        margin-left: 100px;
+    }
 }
 
 .ankit:hover {
@@ -165,7 +231,7 @@ body, html {
     height: 350px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
 }
 .aasirvad p{
     width:660px;
@@ -175,20 +241,30 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+    .aasirvad h3{
+        width: auto;
+        height: 40px;
+        font-size: 28px;
+        margin: 10px 20px 10px 20px;
+    }
 
-.bidan_chettri{
+    .aasirvad p {
+        width:auto;
+        height: 60px;
+        line-height: 18px;
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+.bidhan_chettri{
     width:100vw;
     height:200px;
     display: flex;
     background-color: rgb(232, 232, 232);
     justify-content: center;
     text-align: center;
-   
-
 }
-
-   
-   
 
 .sites h3{
     font-family: "Playfair Display",serif;
@@ -196,27 +272,68 @@ body, html {
      
 }
 .sites p{
-     width:360px;
+    width:360px;
     height: 84px;
     line-height: 24px;
     color: rgb(106, 102, 98);
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+@media screen and (max-width: 1000px) {
+    .bidhan_chettri {
+        width: auto;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+     text-align: center;
+    }
+
+    .sites h3 {
+        font-size: 30px;
+    }
+    
+    .sites p {
+        width: auto;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+}
+
 .temple{
     width: 100vw;
     height: 700px;
     background-color:rgb(232, 232, 232) ;
-    
-    
 }
 .maya_temple{
-
     margin-left: 50px;
     background-color: white;
     display: inline-block;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .temple {
+        height: auto; /* Adjust height for flexibility */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content */
+        padding: 20px;
+    }
+
+    .maya_temple {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin-left: 0; /* Remove fixed margin */
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .div img {
+        max-width: 100%; /* Ensure images scale */
+        height: auto;
+    }
+}
+
 .heading h3{
     padding-left: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

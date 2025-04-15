@@ -20,11 +20,11 @@
         height: 100px;
     }
     .navbar {
-    height: 90px;
+    height: 80px;
     width: 100%;
     display: flex;
     border-left: 8px solid transparent;
-    position: fixed;
+    position: sticky;
     z-index: +999;
     background-color:transparent;
     backdrop-filter: blur(0.7px);
@@ -42,8 +42,8 @@
 
 .nav-ul {
     display: flex;
-    position: relative;
-    left: 350px;
+    position: sticky;
+    left: 550px;
     list-style: none;
 }
 
@@ -96,6 +96,46 @@
 .japan:active{
     opacity: 0.5;
 }
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        height: auto;
+        backdrop-filter: blur(5px);
+        position: static;
+    }
+
+    .nav-logo {
+        height: 60px;
+        width: 60px; /* Adjust size for mobile */
+        margin: 10px auto;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        padding: 0;
+        left: 0; /* Remove fixed positioning */
+        align-content: center;
+        position: sticky;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .japan {
+        width: 100%; /* Make button full-width */
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 .gallary{
     width: 100vw;
     height: 1200px;
@@ -103,9 +143,23 @@
 .gallary h4{
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    font-weight: 400;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 30px;   
     text-align: center;
+    width: 100%;
+    height: auto;
+}
+@media  screen and (max-width: 1000px) {
+    .gallary{
+        width: 100%;
+        height: auto;
+        margin-top: auto;
+    }
+
+    .gallary h4 {
+        margin: 220px 20px 20px 20px;
+    }
 }
 .gallary hr{
   margin-top: 30px;
@@ -148,32 +202,22 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-          </style>
-    </head>
-    <body>
-        <section class="slide" >
-            <div class="navbar">
-            <a href="index.html"><div class="nav-logo"></div></a>
-            <ul class="nav-ul">
-                <li><a href="lumbini.html">Home</a></li>
-                <li><a href="gallary.html"> Gallary</a></li>
-                <li><a href="Article.html">Article</a></li>
-                <li><a href="lumbini.html#Location">Location</a></li>
-                <li><a href="lumbini.html#tours"> 
-                    <button class="japan">
-                    Contact us &#8594;</button>
-                </a></li>
-              
-                
-            </ul>
+    </style>
+        </head>
+        <body>
+            <section class="slide" >
+             <div class="navbar">
+                <a href="index.html"><div class="nav-logo"></div></a>
+                    <ul class="nav-ul">
+                        <li><a href="lumbini.html">Home</a></li>
+                        <li><a href="gallary.html"> Gallary</a></li>
+                         <li><a href="Article.html">Article</a></li>
+                        <li><a href="lumbini.html#Location">Location</a></li>
+                        <li><a href="lumbini.html#tours"> 
+                        <button class="japan">
+                         Contact us &#8594;</button>
+                        </a></li>
+                    </ul>
         </div>
         </section>
         
