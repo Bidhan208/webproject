@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visitor information</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            position: sticky;
+            width: 100%;
+            height: 190px;
+            margin-top: -2px;
+            color: #2b2b2b;
+        }
+
+        .head{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            text-align: center;
+            font-size: 40px;
+            position: static;
+        }
+
+        .header_paragraph {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            text-align: center;
+            font-size: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #a6782d ;
+            color: #2b2b2b;
+        }
+
+        .nav2 {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav2 li a {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2b2b2b;
+            text-decoration: none;
+            border-bottom: 2px solid #c49b3f transparent;
+        }
+        
+        .nav2 li a:hover{
+            border-bottom: 2px solid #c49b3f;
+            transform: scale(1.02);
+            transition: all 0.4s ease;
+            background-color: #fffaf2;
+        }
+
+        .headings{
+            font-weight: 600;
+            font-size: 35px;
+            border-left: 5px solid #c49b3f;
+            color: #2b2b2b;
+            margin-bottom: 30px;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .things_to_do{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        @media  screen and (max-width: 800px) {
+            .things_to_do {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+        .li:hover {
+            transform: scale(1.02)
+        }
+        
+        .li {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 300;
+            background-color: #fffaf2;
+            padding: 8px 8px 8px 8px;
+            border-radius: 8px;
+            width: 330px;
+            transition: transform 0.3s ease;
+            margin: 10px 10px 10px 10px;
+        }
+
+        .li h3{
+            color: #a6782d;
+            font-size: 18px;
+        }
+        .image img{
+            border-radius: 15px;
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+        .festivals_and_events {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-evenly; 
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;   
+        }
+
+        @media  screen and (max-width: 800px) {
+            .festivals_and_events {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .section {
+          padding: 40px 20px;
+          max-width: 1100px;
+          margin: auto;
+        }
+         h2 {
+          border-left: 5px solid #c49b3f;
+          padding-left: 10px;
+          color: #2b2b2b;
+          margin-bottom: 30px;
+          width: 100%;
+          height: 80px;
+        }
+        @media  screen and (max-width: 800px){
+            h2 {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .nearby-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        .card {
+          background-color: #fffaf2;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          padding: 15px;
+          width: 320px;
+          transition: transform 0.3s ease;
+        }
+        .card:hover {
+          transform: scale(1.02);
+        }
+        .card img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+        .card h3 {
+          margin: 5px 0;
+          color: #a6782d;
+        }
+    </style>
+</head>
+<body>
+    <header> <h1 class="head">Welcome To Lumbini</h1>
+        <h3 class="header_paragraph">Explore Lumbini the birthplace of Siddhartha Gautama Buddha</h3>
+    
+    <ul class="nav2">
+        <li><a href="#to_do">Things do Do</a></li>
+        <li><a href="#festivals">Festivals and Events</a></li>
+        <li><a href="#nearby">Nearby Attractions</a></li>
+    </ul>
+    </header>
+
+    <h2 class="headings">Things to do</h2>
+    <div class="things_to_do" id="to_do">
+        <div class="li">
+            <div class="image"><img src="lumbini_museum.jpg" alt="Lumbini Museum" height="210px" width="310px"></div>
+            <h3>Explore Lumbini Museum</h3>
+            <p>The Lumbini Museum is a treasure trove of historical and cultural artifacts which provides deep insight into the life of Gautama Buddha</p>
+        </div>
+
+        <div class="li">
+            <div class="image"><img src="lumbini_monastery.jpg" alt="Lumbini Monastery" height="210px" width="310px"></div>
+            <h3>Lumbini Monasteries Zone</h3>
+            <p>The Lumbini Monastic Zone is one of the most fascinating parts of Lumbini where ountries from around the world have built stunning Buddhist monasteries to represent their culture, architecture, and interpretation of Buddha's teachings.</p>
+        </div>
+        <div class="li">
+            <div class="image"><img src="meditating.jpg" alt="Meditating Sesson" height="210px" width="310px"></div>
+            <h3>Meditation session</h3>
+            <p>Lumbini is a living sanctuary of peace, attracting spiritual seekers from all over the world. Many visitors come here not only to explore but also to experience inner peace through meditation.</p>
+        </div>
+    </div>
+
+    <h2 class="headings" id="festivals">Festivals and Events</h2>
+    <div class="festivals_and_events">
+        <div class="li">
+            <div class="image"><img src="buddha_jayanti.jpg" alt="Buddha Jayanti" height="210px" width="310px"></div>
+            <h3>Buddha jayanti</h3>
+            <p>Buddha Jayanti is a significant festival honoring Gautam Buddha’s birth, enlightenment, and passing. In Lumbini, devotees gather for prayers, meditation, and offerings at Maya Devi Temple.</p>
+        </div>
+        <div class="li">
+            <div class="image"><img src="lhosar.jpg" alt="Lhosar" height="210px" width="310px"></div>
+            <h3>Lhosar</h3>
+            <p>Losar is the Tibetan New Year, celebrated with prayers, rituals, and cultural performances. In Lumbini, devotees mark the occasion with offerings, traditional dances, and festive gatherings at monasteries. </p>
+        </div>
+        <div class="li">
+            <div class="image"><img src="spritual_gathering.jpg" alt="Spritual Gathering" height="210px" width="310px"></div>
+            <h3>spritual Gathering</h3>
+            <p>Lumbini hosts spiritual gatherings where pilgrims meditate, pray, and seek wisdom at sacred sites. Monasteries offer retreats, teachings, and cultural ceremonies. </p>
+        </div>
+    </div>
+
+
+    <section class="section">
+        <h2 class="headings" id="nearby">Nearby Attractions</h2>
+        <div class="nearby-grid">
+          
+          <div class="card">
+            <img src="tilaurakot.jpg" alt="Tilaurakot Ruins">
+            <h3>Tilaurakot</h3>
+            <p><strong>27 km</strong> from Lumbini</p>
+            <p>Believed to be the ancient capital of Kapilvastu where Prince Siddhartha spent his early life.</p>
+          </div>
+          
+          <div class="card">
+            <img src="ramgram_stupa.jpg" alt="Ramgram Stupa">
+            <h3>Ramgram Stupa</h3>
+            <p><strong>50 km</strong> from Lumbini</p>
+            <p>The only stupa containing Buddha’s relics that has not been opened or disturbed.</p>
+          </div>
+          
+          <div class="card">
+            <img src="devdaha.jpg" alt="Devadaha">
+            <h3>Devadaha</h3>
+            <p><strong>35 km</strong> from Lumbini</p>
+            <p>The maternal home of Queen Mayadevi (Buddha’s mother), rich in history and archaeological ruins.</p>
+          </div>
+      
+        </div>
+      </section>
+      
+      <style>
+        
+      </style>
+      
+</body>
+</html>
