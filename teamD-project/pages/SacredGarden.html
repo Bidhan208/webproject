@@ -6,101 +6,117 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
         <title>Sacred garden</title>
          <style>
-            .temple{
-                text-align: center;
-                
-               
-            }
-            .temple h3{
-                font-size: 50px;
-                font-family: "Bebas Neue", sans-serif;
-            }
-            .maya{
-                border-radius: 10px;
-                margin-left: 20px;
-                box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-                width: 300px;
-               
-               
-            }
-            h1{
-                font-family: "Bebas Neue", sans-serif;
-                font-size: 40px;
-                margin-top: 40px;
-                text-align: center;
-                
-            }
-            p{
-              font-family: Arial, Helvetica, sans-serif;
-              text-align: justify;
-              font-size: 22px;
-              font-weight: 500;
-              margin: 20px 60px 20px 60px;
-              line-height: 25px;
-            }
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdfdfd;
+        }
 
-            .container{
+        .main-container {
             display: flex;
+            flex-direction: row;
+            align-items: flex-start;
             justify-content: center;
-            align-items: center;
-            margin: 60px 0 0 60px;
-           }
+            padding: 40px 60px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
 
-            button{
-                  background-color: black;
-                  color: white;
-                  border: solid;
-                  padding: 15px 15px;
-                  border-radius: 30px;
-                  font: bold;
-                  transition: opacity 0.15s;
-           }
-           button:hover{
-             opacity: 0.8;
-           }
-           button:active{
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+            width: 60vw;
+            height: 80vh;
+            max-width: 600px;
+        }
+
+        .content-container {
+            max-width: 600px;
+        }
+
+        h3 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 120px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button:active {
             opacity: 0.5;
-           }
-           
-           @media screen and (max-width: 1000px) {
-            .maya{
-                border-radius: 10px;
-                margin-left: 20px;
-                box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-                width: 40vw;
-               height: 40vw;
-           }
-           
-            p{
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 22px;
-              font-weight: 500;
-              margin : 20 60px 20px 60px;
-              line-height: 25px;
-              text-align: justify;
-          
-           }
-          }
+        }
 
-         </style>
+        @media screen and (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
 
-    </head>
-    <body>
-        <div class="temple">
-         <h3>Sacred Garden</h3>
-       <img src="45645a72-0a11-4cf3-85bd-6d1d9f26.jpg" class="maya">
-       </div>
+            .image-container img {
+                width: 80vw;
+            }
 
-       <h1>The Sacred Garden of Lumbini</h1>
-       <p>The Sacred Garden in Lumbini is a serene and spiritually significant area surrounding the Maya Devi Temple, marking the birthplace of Lord Buddha. This beautifully preserved site is filled with ancient ruins, lush greenery, and a tranquil atmosphere that draws pilgrims and visitors from all over the world. The garden is home to several key landmarks, including the Ashokan Pillar, which was erected by Emperor Ashoka in the 3rd century BCE to commemorate his visit and confirm Lumbini as the birthplace of Buddha. Nearby, the Puskarini Pond holds special importance, as it is believed to be the spot where Queen Maya Devi bathed before giving birth to Prince Siddhartha and where the newborn Buddha received his first purification bath.</p>
-       <p>The Sacred Garden is dotted with the remains of ancient monasteries and stupas, dating back to different periods of Buddhist history, showcasing the site's long-standing religious significance. Tall Sal trees and peaceful walking paths create an ideal environment for meditation and reflection, allowing visitors to connect with the spiritual essence of the place. Monks from various Buddhist traditions often chant and meditate in the garden, adding to its sacred ambiance. The entire area is part of the Lumbini Development Project, which aims to preserve its historical and spiritual value while making it accessible to pilgrims and tourists. Recognized as a UNESCO World Heritage Site, the Sacred Garden serves as a timeless symbol of peace, wisdom, and enlightenment, offering a glimpse into the past while inspiring millions in the present.</p>
-       <a href="ashok_pillers.html">
-       <div class="container">
-        <div>
-            <button>Teleport to another sites</button>
+            .content-container {
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+            <img src="Sacred_garden.jpg" alt="Bodhi Tree">
         </div>
-       
+
+        <div class="content-container">
+            <h3>Sacred Garden</h3>
+            <h1>The Sacred garden of Lumbini</h1>
+            <p>The Sacred Garden in Lumbini is a serene and spiritually significant area surrounding the Maya Devi Temple, marking the birthplace of Lord Buddha. This beautifully preserved site is filled with ancient ruins, lush greenery, and a tranquil atmosphere that draws pilgrims and visitors from all over the world. The garden is home to several key landmarks, including the Ashokan Pillar, which was erected by Emperor Ashoka in the 3rd century BCE to commemorate his visit and confirm Lumbini as the birthplace of Buddha. Nearby, the Puskarini Pond holds special importance, as it is believed to be the spot where Queen Maya Devi bathed before giving birth to Prince Siddhartha and where the newborn Buddha received his first purification bath.</p>
+            <p>The Sacred Garden is dotted with the remains of ancient monasteries and stupas, dating back to different periods of Buddhist history, showcasing the site's long-standing religious significance. Tall Sal trees and peaceful walking paths create an ideal environment for meditation and reflection, allowing visitors to connect with the spiritual essence of the place. Monks from various Buddhist traditions often chant and meditate in the garden, adding to its sacred ambiance. The entire area is part of the Lumbini Development Project, which aims to preserve its historical and spiritual value while making it accessible to pilgrims and tourists. Recognized as a UNESCO World Heritage Site, the Sacred Garden serves as a timeless symbol of peace, wisdom, and enlightenment, offering a glimpse into the past while inspiring millions in the present.</p>
+        </div>
     </div>
-    </a>
-      </body>
+
+    <div class="button-container">
+        <a href="ashok_pillers.html"><button>Teleport to another sites</button></a>
+    </div>
+
+</body>
 </html>

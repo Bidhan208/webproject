@@ -4,101 +4,120 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-        <title>bodhitree</title>
+        <title>Bodhi tree</title>
          <style>
-            .temple{
-                text-align: center;
-                
-               
-            }
-            .temple h3{
-                font-size: 50px;
-                font-family: "Bebas Neue", sans-serif;
-            }
-            .maya{
-                border-radius: 10px;
-                margin-left: 20px;
-                box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-                width:300px;
-               
-               
-            }
-            h1{
-                font-family: "Bebas Neue", sans-serif;
-                font-size: 40px;
-                margin-top: 40px;
-                text-align: center;
-                
-            }
-            p{
-              font-family: Arial, Helvetica, sans-serif;
-              text-align: center;
-              font-size: 22px;
-              font-weight: 500;
-              margin: 20px 60px 20px 60px;
-              line-height: 25px;
-              text-align: justify;
-            }
-            .container{
+         body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        .main-container {
             display: flex;
+            flex-direction: row;
+            align-items: flex-start;
             justify-content: center;
-            align-items: center;
-            margin-top: 60px;
-            margin-bottom: 60px;
-           }
-            button{
-                  background-color: black;
-                  color: white;
-                  border: solid;
-                  padding: 15px 15px;
-                  border-radius: 30px;
-                  font: bold;
-                  transition: opacity 0.15s;
-           }
-           button:hover{
-             opacity: 0.8;
-           }
-           button:active{
+            padding: 40px 60px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+            width: 60vw;
+            height: 80vh;
+            max-width: 600px;
+        }
+
+        .content-container {
+            max-width: 600px;
+        }
+
+        h3 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 120px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 50px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button:active {
             opacity: 0.5;
-           }
-           
-           @media  screen and (max-width: 1000px) {
-                .maya{
-                border-radius: 10px;
-                margin-left: 20px;
-                box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
-                width: auto;
-               height: 40vw;
-                }
-                p {
-              font-family: 'Times New Roman', Times, serif;
-              font-size: 22px;
-              font-weight: 500;
-              margin : 0 60px 20px 60px;
-              line-height: 25px;
-              text-align: justify;
-                }
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
             }
-         </style>
 
-    </head>
-    <body>
-        <div class="temple">
-         <h3>Bodhi tree</h3>
-       <img src="6100.jpg" class="maya">
-       </div>
+            .image-container img {
+                width: 80vw;
+            }
 
-       <h1>The Bodhi Tree of Lumbini: A Symbol of Peace and Enlightenment</h1>
-       <p>The Bodhi Tree in Lumbini is a sacred fig tree located near the Maya Devi Temple, where pilgrims and monks gather for meditation and prayers. This tree holds deep spiritual significance as a symbol of enlightenment, wisdom, and peace. While the original Bodhi Tree under which Siddhartha Gautama attained enlightenment is in Bodh Gaya, India, the Bodhi Tree in Lumbini serves as a reminder of his birth and spiritual journey.</p>
+            .content-container {
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+            <img src="Bodhi_Tree.jpg" alt="Bodhi Tree">
+        </div>
+
+        <div class="content-container">
+            <h3>Bodhi Tree</h3>
+            <h1>The Bodhi Tree of Lumbini: A Symbol of Peace and Enlightenment</h1>
+            <p>The Bodhi Tree in Lumbini is a sacred fig tree located near the Maya Devi Temple, where pilgrims and monks gather for meditation and prayers. This tree holds deep spiritual significance as a symbol of enlightenment, wisdom, and peace. While the original Bodhi Tree under which Siddhartha Gautama attained enlightenment is in Bodh Gaya, India, the Bodhi Tree in Lumbini serves as a reminder of his birth and spiritual journey.</p>
        <p>Shaded by its large, spreading branches, devotees often sit beneath the tree, meditating or tying colorful prayer flags to its limbs, carrying their wishes and prayers with the wind. Many believe that this tree, like others in Buddhist sacred sites, has grown from cuttings of the original Bodhi Tree, making it a living link to Buddha’s enlightenment. The serene atmosphere under the tree, with monks chanting and the gentle rustling of leaves, creates an ideal place for reflection and peace.</p>
        <p>Located close to the Ashoka Pillar and the Puskarini Pond, the Bodhi Tree is an integral part of Lumbini’s Sacred Garden. Visitors from around the world come here to experience its tranquility, sit in meditation, and feel a connection to the spiritual energy of the place where Buddha’s life began. Whether you are a devoted Buddhist or simply a seeker of peace, the Bodhi Tree of Lumbini offers a quiet retreat, reminding all who visit of Buddha’s message of compassion and enlightenment.</p>
-       <a href="../lumbini.html#sites">
-       <div class="container">
-        <div>
-            <button>Back to Sacred sites</button>
         </div>
-       
     </div>
-    </a>
-       </body>
-       </html>
+
+    <div class="button-container">
+        <a href="../lumbini.html#sites"><button>Back to Home page</button></a>
+    </div>
+
+</body>
+</html>
